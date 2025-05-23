@@ -1,25 +1,28 @@
 import { useState } from "react";
 import moviesData from "../movies-data.json";
-
+import ImprovedMovieCard from './ImprovedMovieCard';
 import MovieCard from "./MovieCard";
 
-function MovieList(){
+function ImprovedMovieList(){
     const [movies,setMovies]=useState(moviesData);
-    const[showMOcies,setShowMovies]=useState(true);
+    const[showMovies,setShowMovies]=useState(true);
     const deleteMovie= movieId =>{
         const filteredMovies=movies.filter(movie=>{
             return movie._id !==movieId;
         });
         setMovies(filteredMovies)
     };
-const toggleShowMovies=()
-    return(
+const toggleShowMovies=()=>{
+    setShowMovies(!showMovies)
+}
+ return(
         <>
         <h2>Movie List</h2>
-        {movies.map(movie=>{
-            return <MovieCard key={movie._id} movie={movie} clickToDelete={deleteMovie}/>;
+        <button onClick={toggleShowMovies}>{showMovies?'Hide':'Show'}</button>
+        {showMovies && movies.map(movie=>{
+            return <ImprovedMovieCard key={movie._id} movie={movie} clickToDelete={deleteMovie}/>;
         })}
         </>
     );
 }
-export default MovieList;
+export default ImprovedMovieList;

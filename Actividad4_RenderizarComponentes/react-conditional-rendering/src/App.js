@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
 import MovieList from './components/MovieList';
+import ImprovedMovieList from './components/ImprovedMovieList';
 import Spinner from './components/Spinner';
 import { useState } from 'react';
 
@@ -12,7 +13,7 @@ function App() {
   }
   else {
     return(<div className="App">
-      <MovieList />
+      <ImprovedMovieList />
     </div>
   )};
   ;
