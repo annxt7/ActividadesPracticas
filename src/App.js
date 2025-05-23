@@ -40,11 +40,12 @@ return matchesSearch;
 
   return (
     <div className="App">
-      <h1>Food List</h1>
+      <h1 className='Titulo'>Food List</h1>
        <AddFoodForm 
        onAdd={addComida} generarId={generarId} onCssChange={cssValue} onBoton={botonValue} setBoton={setBoton} setCss={setCss}
        />
        <SearchBar searchText={searchText} setSearchText={setSearchText}/>
+       <hr className='lineaSep'></hr>
       <div className="boxAlimentos">
         {filteredFoods.length!==0 && <Listado Productos={filteredFoods} onDelete={deleteFood}/>}
         {filteredFoods.length===0 && <NoProducts/>}
@@ -157,8 +158,8 @@ function handleClick(){
 function SearchBar({searchText,setSearchText}){
   return(
     <>
-    <h3>Busca la comida que quieras</h3>
-    <Input type='text'  value={searchText} onChange={(e)=>setSearchText(e.target.value)}></Input>
+    <h3 >Busca la comida que quieras: </h3>
+    <Input type='text'  value={searchText} onChange={(e)=>setSearchText(e.target.value)} className='SearchBar'></Input>
     </>
   );
 }
