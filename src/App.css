@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+.boxAlimentos{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Formulario{
+  width: 800px;
+  margin: 0 auto;
+}
+.Formulario Input{
+  margin: 13px;
+  border: 1.5px solid black;
+}
+.Formulario  :hover Input{
+background-color: #d7ccd673;
+border: 1.5px solid #282c34 ;
+}
+.Formulario label{
+  font-size: 17px;
+  text-decoration: underline;
+  color: #282c34;
+}
+.Mostrar{
+  display: block;
+}
+.Ocultar{
+  display: none;
+}
+button{
+  margin: 10px;
+  border: 2px solid rgb(55, 91, 236);
+  padding: 8px 14px;
+  background-color: #6163fb;
+  color: white;
+  border-radius: 7%;
+}
+Button{
+  margin-bottom: 20px !important;
+}
