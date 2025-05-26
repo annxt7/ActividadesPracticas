@@ -8,7 +8,6 @@ import FilterMovies from "./FilterMovies";
 export default function MovieList() {
     const [movies, setMovies] = useState(Data);
     const [moviesData, setMoviesData] = useState(Data)
-
     const addNewMovie = newMovie => {
         const updatedMoviesData = [...moviesData, newMovie];
         const updatedMovies = [...movies, newMovie];

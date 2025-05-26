@@ -20,8 +20,9 @@ export default function AddMovie(props) {
 
     return(
         <div className="AddMovie">
-            <h4>Añadir una película</h4>
-            <form onSubmit={handleSubmit}>
+            
+            <form onSubmit={handleSubmit} className="add-movie-form">
+                <h4>Añadir una película</h4>
                 <label> Título: </label>
                 <input
                 type="text"
@@ -50,7 +51,8 @@ export default function AddMovie(props) {
                 value={hasOscars}
                 onChange={handleOscarsInput}
                 />
-                <button type="submit">Añadir una película</button>
+                <br/>
+                <button type="submit">Añadir una película +</button>
             </form>
         </div>
     );
