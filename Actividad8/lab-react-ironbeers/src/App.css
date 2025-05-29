@@ -1,0 +1,128 @@
+
+body {
+  width: 100%;
+ justify-self: anchor-center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 0;
+ 
+}
+.AllBeers img,
+.RandomBeer img,
+.NewBeer img{
+width: 100%;
+}
+
+/* NAV centrado dentro del móvil */
+nav {
+  background: #cec8db;
+  color: white;
+  box-shadow: 0px 1px 2px gray;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.Header img{
+  width: 100%;
+  margin-top:0;
+  margin-left: 0;
+}
+
+/* Tarjeta estilo móvil */
+.CardCerveza {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 10px;
+}
+
+.CardCerveza img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+.CardCerveza h4,
+.CardCerveza h5,
+.CardCerveza p {
+  margin: 0;
+  text-align: left;
+}
+
+.CardCerveza h5 {
+  color: gray;
+  font-weight: normal;
+}
+
+.CardCerveza p {
+  font-size: 0.9em;
+}
+.RandomBeer p,
+.AllBeers p,
+.NewBeer p{
+  color: gray;
+  margin-left: 20px;
+  margin-top: 0;
+}
+.RandomBeer h1,
+.AllBeers h1,
+.NewBeer h1{
+  color: black;
+  margin-left: 20px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.cervezaIndividual img{
+ width: 100%;
+ 
+}
+.cervezaRandom img{
+width:100%;
+ 
+}
+.formularioAdd{
+  justify-content: center;
+  text-align:  left;
+  margin-left: 20px;
+
+}
+.formularioAdd input{
+  width: 90%;
+  height: 30px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Redondeo uniforme */
+  outline: none;
+  box-sizing: border-box;
+}
+.formularioAdd label{
+margin-left: 10px;
+font-weight: 400px;
+}
+.formularioAdd button{
+align-self: center;
+margin-top: 30px;
+  width: 90%;
+  height: 30px;
+  padding: 5px 10px;
+  color: #f9f9f9;
+  background-color: #3DC4FC;
+  border: 1px solid #3DC4FC;
+  border-radius: 25px;
+  outline: none;
+  box-sizing: border-box;
+}
+App{
+  max-width: 100vh;
+}
